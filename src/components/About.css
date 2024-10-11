@@ -1,0 +1,60 @@
+/* src/About.css */
+
+/* General styles */
+.about-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(94 234 212);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+ 
+  .icon {
+    margin-right: 10px; /* Space between the icon and text */
+    font-size: 1.5em; /* Size of the icon */
+  }
+  
+  /* CSS Animations */
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in;
+  }
+  
+  /* Slide-in from the left */
+  @keyframes slideInLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  .slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%); /* Start from the right */
+    }
+    100% {
+      transform: translateX(0); /* End at the original position */
+    }
+  }
+  
+  /* Apply the animation to elements with the class 'slide-in-right' */
+  .slide-in-right {
+    animation: slideInRight 1.5s ease-out;
+  }
